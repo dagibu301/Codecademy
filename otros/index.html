@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Prueba 15</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#first-t").click(function () {
+          $("#first-c").removeClass("inactive").addClass("active");
+          $("#second-c").removeClass("active").addClass("inactive");
+          $("#third-c").removeClass("active").addClass("inactive");
+          $("#fourth-c").removeClass("active").addClass("inactive");
+        });
+
+        $("#second-t").click(function () {
+          $("#second-c").removeClass("inactive").addClass("active");
+          $("#first-c").removeClass("active").addClass("inactive");
+          $("#third-c").removeClass("active").addClass("inactive");
+          $("#fourth-c").removeClass("active").addClass("inactive");
+        });
+
+        $("#third-t").click(function () {
+          $("#third-c").removeClass("inactive").addClass("active");
+          $("#second-c").removeClass("active").addClass("inactive");
+          $("#first-c").removeClass("active").addClass("inactive");
+          $("#fourth-c").removeClass("active").addClass("inactive");
+        });
+
+        $("#fourth-t").click(function () {
+          $("#fourth-c").removeClass("inactive").addClass("active");
+          $("#second-c").removeClass("active").addClass("inactive");
+          $("#third-c").removeClass("active").addClass("inactive");
+          $("#first-c").removeClass("active").addClass("inactive");
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <div class="container">
+      <div>
+        <div  id="first-t" class="title active-title">Inicio</div>
+        <div id="first-c" class="content">
+          <p>
+            1111111111Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
+            viverra efficitur tortor in dictum. Phasellus sit amet augue non
+            magna tempus ultricies at non tellus. Integer et ante sed orci
+            pretium ultrices cursus ac augue. Integer non ex ac leo convallis
+            fringilla. Aliquam non turpis suscipit, volutpat lorem rutrum,
+            vestibulum tellus. Praesent at volutpat nisi. Nulla facilisi. Duis
+            maximus gravida risus, eu consequat purus finibus in.
+          </p>
+        </div>
+      </div>
+
+      <div>
+        <div id="second-t" class="title">Nosotros</div>
+        <div id="second-c" class="content inactive">
+            <p>
+                22222222Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
+                viverra efficitur tortor in dictum. Phasellus sit amet augue non
+                magna tempus ultricies at non tellus. Integer et ante sed orci
+                pretium ultrices cursus ac augue. Integer non ex ac leo convallis
+                fringilla. Aliquam non turpis suscipit, volutpat lorem rutrum,
+                vestibulum tellus. Praesent at volutpat nisi. Nulla facilisi. Duis
+                maximus gravida risus, eu consequat purus finibus in.
+              </p>
+        </div>
+      </div>
+
+      <div>
+        <div id="third-t" class="title">Servicios</div>
+        <div id="third-c" class="content inactive">
+            <p>
+                3333333Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
+                viverra efficitur tortor in dictum. Phasellus sit amet augue non
+                magna tempus ultricies at non tellus. Integer et ante sed orci
+                pretium ultrices cursus ac augue. Integer non ex ac leo convallis
+                fringilla. Aliquam non turpis suscipit, volutpat lorem rutrum,
+                vestibulum tellus. Praesent at volutpat nisi. Nulla facilisi. Duis
+                maximus gravida risus, eu consequat purus finibus in.
+              </p>
+        </div>
+      </div>
+
+      <div>
+        <div id="fourth-t" class="title">Blog</div>
+        <div id="fourth-c" class="content inactive">
+            <p>
+                44444444Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
+                viverra efficitur tortor in dictum. Phasellus sit amet augue non
+                magna tempus ultricies at non tellus. Integer et ante sed orci
+                pretium ultrices cursus ac augue. Integer non ex ac leo convallis
+                fringilla. Aliquam non turpis suscipit, volutpat lorem rutrum,
+                vestibulum tellus. Praesent at volutpat nisi. Nulla facilisi. Duis
+                maximus gravida risus, eu consequat purus finibus in.
+              </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

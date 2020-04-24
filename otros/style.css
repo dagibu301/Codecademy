@@ -1,0 +1,63 @@
+body {
+    font-family: sans-serif;
+}
+
+.title {
+  background-color: rgb(59, 58, 58);
+  color: whitesmoke;
+  width: 100%;
+  padding: 0.75rem;
+}
+
+.active {
+  display: block;
+}
+
+.active-title {
+  background-color: rgb(20, 61, 98);
+}
+.inactive {
+  display: none;
+}
+
+.container {
+  margin: 5rem auto;
+  width: 20rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 900px) {
+  .title {
+    display: inline-block;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media only screen and (min-width: 900px){
+    #first-c{
+        width: 300%;
+    }
+    #second-c{
+        position: relative;
+        left: -4rem;
+        width: 300%;
+
+    }
+
+    #third-c{
+        position: relative;
+        left: -9.5rem;
+        width: 300%;
+    }
+
+    #fourth-c{
+        position: relative;
+        left: -15rem;
+        width: 300%;
+    }
+}
